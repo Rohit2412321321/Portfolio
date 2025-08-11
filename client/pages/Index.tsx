@@ -86,10 +86,7 @@ export default function Index() {
                 <Menu className="w-6 h-6" />
               )}
             </button>
-            <Button className="bg-primary hover:bg-primary/90 text-white">
-              <Download className="w-4 h-4 mr-2" />
-              Download CV
-            </Button>
+            
             <a
               href="/Portfolio.png"
               download
