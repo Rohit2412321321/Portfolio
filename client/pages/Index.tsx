@@ -58,6 +58,20 @@ export default function Index() {
             </Button>
           </div>
         </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border">
+            <nav className="flex flex-col p-4 space-y-4">
+              <button onClick={() => scrollToSection('home')} className="text-left hover:text-primary transition-colors">Home</button>
+              <button onClick={() => scrollToSection('about')} className="text-left bg-primary text-white px-4 py-2 rounded-full text-sm w-fit">About Me</button>
+              <button onClick={() => scrollToSection('services')} className="text-left hover:text-primary transition-colors">Services</button>
+              <button onClick={() => scrollToSection('projects')} className="text-left hover:text-primary transition-colors">Projects</button>
+              <button onClick={() => scrollToSection('testimonials')} className="text-left hover:text-primary transition-colors">Testimonials</button>
+              <button onClick={() => scrollToSection('contact')} className="text-left hover:text-primary transition-colors">Contact</button>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
