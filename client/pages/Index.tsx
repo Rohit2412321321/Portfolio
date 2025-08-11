@@ -129,9 +129,9 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-primary p-2 mx-auto">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                  alt="Rakib Khanal"
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F2309e3d1e7f74b258da02ab11183584a?format=webp&width=400"
+                  alt="Rohit Khanal"
                   className="w-full h-full rounded-full object-cover"
                 />
               </div>
