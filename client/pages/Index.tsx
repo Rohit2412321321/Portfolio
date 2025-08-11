@@ -34,7 +34,7 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold">
-              <span className="text-primary">R</span>akib
+              <span className="text-primary">R</span>ohit
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-primary transition-colors">Home</button>
