@@ -45,7 +45,7 @@ export default function Index() {
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="bg-primary text-white px-4 py-2  text-sm font-bold"
+                className="bg-primary text-white text-sm font-bold"
               >
                 About Me
               </button>
