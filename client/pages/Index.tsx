@@ -113,7 +113,7 @@ export default function Index() {
                   <a href="#" className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                     <Instagram className="w-5 h-5" />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                  <a href="https://www.linkedin.com/in/rohit-khanal/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </div>
