@@ -271,8 +271,8 @@ export default function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="group cursor-pointer">
               <div className="bg-card rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2Fe37ea809934c440fba78590495f8ded3?format=webp&width=400"
                   alt="Agency Landing Page Design"
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform"
                 />
