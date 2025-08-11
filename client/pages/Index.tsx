@@ -93,7 +93,7 @@ export default function Index() {
             <a
               href="/Portfolio.png"
               download
-              className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded w-4 h-4 mr-2"
+              className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded"
             >
               Download
             </a>
