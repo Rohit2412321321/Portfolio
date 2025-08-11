@@ -90,7 +90,14 @@ export default function Index() {
               <Download className="w-4 h-4 mr-2" />
               Download CV
             </Button>
-            <a href="Portfolio.png" download="Portfolio.png" class="btn btn-primary">Download</a>
+            <a
+              href="/Portfolio.png"
+              download
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Download
+            </a>
+
 
           </div>
         </div>
