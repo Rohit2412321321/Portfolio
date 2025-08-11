@@ -81,7 +81,7 @@ export default function Index() {
             <div className="lg:w-1/2 mb-8 lg:mb-0">
               <p className="text-muted-foreground mb-2">Hi I am</p>
               <h1 className="text-4xl lg:text-6xl font-bold mb-4">
-                <span className="text-primary">Rakib Khanal</span><br />
+                <span className="text-primary">Rohit Khanal</span><br />
                 <span className="text-white">UI & UX</span><br />
                 <span className="text-white">Designer</span>
               </h1>
