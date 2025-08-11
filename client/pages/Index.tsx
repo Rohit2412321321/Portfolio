@@ -95,7 +95,7 @@ export default function Index() {
               download
               className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded"
             >
-              Download
+              Download CV
             </a>
 
 
