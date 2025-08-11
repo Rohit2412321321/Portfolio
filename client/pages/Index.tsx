@@ -3,15 +3,18 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "react-router-dom";
-import { 
-  Facebook, 
-  Twitter, 
-  Instagram, 
-  Linkedin, 
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
   Download,
   ArrowRight,
-  Star
+  Star,
+  Menu,
+  X
 } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function Index() {
   return (
