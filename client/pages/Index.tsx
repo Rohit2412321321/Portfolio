@@ -394,7 +394,7 @@ export default function Index() {
                 <span className="text-primary">L</span>ets Connect there
               </div>
               <div className="flex space-x-4">
-                <a href="#" className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                <a href="https://www.facebook.com/rohit.khanal.9693" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a href="#" className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
