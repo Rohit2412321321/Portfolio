@@ -95,8 +95,6 @@ export default function Index() {
             >
               Download CV
             </a>
-
-
           </div>
         </div>
 
