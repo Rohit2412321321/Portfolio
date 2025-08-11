@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        portfolio: {
+          dark: "#1a1a1a",
+          darker: "#0f0f0f",
+          orange: "#ff6b35",
+          "orange-light": "#ff8c66",
+          gray: "#8b8b8b",
+          "gray-light": "#b3b3b3",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
