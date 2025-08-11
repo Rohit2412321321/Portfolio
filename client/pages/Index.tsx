@@ -445,7 +445,7 @@ export default function Index() {
           </div>
           
           <div className="mt-8 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-            <div>Copyright 2023 Rakib Khanal. All Rights Reserved.</div>
+            <div>Copyright 2023 Rohit Khanal. All Rights Reserved.</div>
             <div className="mt-2">
               User Terms & Conditions | Privacy Policy
             </div>
