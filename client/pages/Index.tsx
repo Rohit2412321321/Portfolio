@@ -104,7 +104,7 @@ export default function Index() {
                   />
                 </div>
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
-                  <a href="#" className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                  <a href="https://www.facebook.com/rohit.khanal.9693" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                     <Facebook className="w-5 h-5" />
                   </a>
                   <a href="#" className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
