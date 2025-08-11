@@ -37,13 +37,21 @@ export default function Index() {
               <span className="text-primary">R</span>akib
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link to="#home" className="hover:text-primary transition-colors">Home</Link>
-              <Link to="#about" className="bg-primary text-white px-4 py-2 rounded-full text-sm">About Me</Link>
-              <Link to="#services" className="hover:text-primary transition-colors">Services</Link>
-              <Link to="#projects" className="hover:text-primary transition-colors">Projects</Link>
-              <Link to="#testimonials" className="hover:text-primary transition-colors">Testimonials</Link>
-              <Link to="#contact" className="hover:text-primary transition-colors">Contact</Link>
+              <button onClick={() => scrollToSection('home')} className="hover:text-primary transition-colors">Home</button>
+              <button onClick={() => scrollToSection('about')} className="bg-primary text-white px-4 py-2 rounded-full text-sm">About Me</button>
+              <button onClick={() => scrollToSection('services')} className="hover:text-primary transition-colors">Services</button>
+              <button onClick={() => scrollToSection('projects')} className="hover:text-primary transition-colors">Projects</button>
+              <button onClick={() => scrollToSection('testimonials')} className="hover:text-primary transition-colors">Testimonials</button>
+              <button onClick={() => scrollToSection('contact')} className="hover:text-primary transition-colors">Contact</button>
             </nav>
+
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
             <Button className="bg-primary hover:bg-primary/90 text-white">
               <Download className="w-4 h-4 mr-2" />
               Download CV
