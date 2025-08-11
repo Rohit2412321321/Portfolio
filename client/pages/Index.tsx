@@ -403,7 +403,7 @@ export default function Index() {
                 <a href="#" className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                <a href="https://www.linkedin.com/in/rohit-khanal/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                   <Linkedin className="w-4 h-4" />
                 </a>
               </div>
