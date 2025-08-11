@@ -284,8 +284,8 @@ export default function Index() {
             
             <div className="group cursor-pointer">
               <div className="bg-card rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop"
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F0002175364494ee7b63b80eeea878ffa?format=webp&width=400"
                   alt="Cycling Landing Page Design"
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform"
                 />
