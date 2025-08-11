@@ -326,10 +326,10 @@ export default function Index() {
           <div className="max-w-3xl mx-auto">
             <Card className="p-8 border border-border bg-card">
               <div className="flex items-start space-x-4">
-                <img 
+                <img
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face"
                   alt="Client"
-                  className="w-15 h-15 rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-cover flex-shrink-0"
                 />
                 <div className="flex-1">
                   <div className="flex mb-3">
