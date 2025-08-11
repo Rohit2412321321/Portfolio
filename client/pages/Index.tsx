@@ -547,9 +547,8 @@ export default function Index() {
               <div>
                 <h3 className="font-semibold mb-3 text-primary">Contact</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <div>+88 01750 000 000</div>
-                  <div>+88 01750 000 000</div>
-                  <div>name@email.com</div>
+                  <div>+977-9860484468</div>
+                  <div>Khanalrohit67@gmail.com.com</div>
                 </div>
               </div>
 
