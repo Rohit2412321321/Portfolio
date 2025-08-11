@@ -37,12 +37,12 @@ export default function Index() {
               <span className="text-primary">R</span>ohit
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('home')} className="hover:text-primary transition-colors">Home</button>
-              <button onClick={() => scrollToSection('about')} className="bg-primary text-white px-4 py-2 rounded-full text-sm">About Me</button>
-              <button onClick={() => scrollToSection('services')} className="hover:text-primary transition-colors">Services</button>
-              <button onClick={() => scrollToSection('projects')} className="hover:text-primary transition-colors">Projects</button>
-              <button onClick={() => scrollToSection('testimonials')} className="hover:text-primary transition-colors">Testimonials</button>
-              <button onClick={() => scrollToSection('contact')} className="hover:text-primary transition-colors">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="hover:text-primary transition-colors font-bold">Home</button>
+              <button onClick={() => scrollToSection('about')} className="bg-primary text-white px-4 py-2 rounded-full text-sm font-bold">About Me</button>
+              <button onClick={() => scrollToSection('services')} className="hover:text-primary transition-colors font-bold">Services</button>
+              <button onClick={() => scrollToSection('projects')} className="hover:text-primary transition-colors font-bold">Projects</button>
+              <button onClick={() => scrollToSection('testimonials')} className="hover:text-primary transition-colors font-bold">Testimonials</button>
+              <button onClick={() => scrollToSection('contact')} className="hover:text-primary transition-colors font-bold">Contact</button>
             </nav>
 
             {/* Mobile menu button */}
