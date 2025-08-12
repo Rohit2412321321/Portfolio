@@ -512,12 +512,6 @@ export default function Index() {
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a
                   href="https://www.instagram.com/rohitk1o/"
                   target="_blank"
                   rel="noopener noreferrer"
