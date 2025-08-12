@@ -1,8 +1,8 @@
 node_modules
 .env*
 .git
-server
-netlify
+server/
+netlify/
 *.log
 .DS_Store
 .vscode
@@ -10,4 +10,6 @@ coverage
 *.test.*
 __tests__
 .nyc_output
-dist/server
+dist/server/
+vite.config.server.ts
+AGENTS.md
