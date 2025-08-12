@@ -499,7 +499,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-4 lg:mb-0">
               <div className="text-2xl font-bold mb-2">
-                <span className="text-primary"></span>Lets Connect there
+                <span className="text-primary">L</span>ets Connect there
               </div>
               <div className="flex space-x-4">
                 <a
