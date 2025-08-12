@@ -1,0 +1,13 @@
+node_modules
+.env*
+.git
+server
+netlify
+*.log
+.DS_Store
+.vscode
+coverage
+*.test.*
+__tests__
+.nyc_output
+dist/server
