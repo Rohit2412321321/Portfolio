@@ -87,14 +87,14 @@ export default function Index() {
               )}
             </button>
             <a
-              href="/Portfolio.png"
-              download
+              href="https://cdn.builder.io/o/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F7d58f9c9e8c048f19f32153a36673cbc?alt=media&token=7730a4db-813c-4ce4-9bbe-f7fc7dbbc28d&apiKey=2ccf64b05f7a4d14ae119a8aeb87e8e5"
+              download="Rohit_Khanal_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded"
             >
               Download CV
             </a>
-
-
           </div>
         </div>
 
