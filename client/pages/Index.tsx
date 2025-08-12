@@ -33,11 +33,7 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold">
-<<<<<<< HEAD
-              <span className="text-primary"></span>Rohit
-=======
-              <span className="text-primary">Rohit</span>
->>>>>>> 7676ee02d28a99b1786aa4511332298c6f9ef2d6
+              <span className="text-primary">R</span>ohit
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <button
