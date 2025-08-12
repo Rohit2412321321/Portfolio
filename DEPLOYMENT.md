@@ -7,6 +7,7 @@ Your portfolio is now configured for easy deployment to Vercel. Follow these ste
 ### Option 1: Deploy via GitHub (Recommended)
 
 1. **Push your code to GitHub:**
+
    ```bash
    git add .
    git commit -m "Ready for Vercel deployment"
@@ -24,11 +25,13 @@ Your portfolio is now configured for easy deployment to Vercel. Follow these ste
 ### Option 2: Deploy via Vercel CLI
 
 1. **Install Vercel CLI:**
+
    ```bash
    npm install -g vercel
    ```
 
 2. **Deploy:**
+
    ```bash
    vercel
    ```
