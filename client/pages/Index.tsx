@@ -524,7 +524,9 @@ export default function Index() {
                   <Twitter className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/rohitk1o/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 >
                   <Instagram className="w-4 h-4" />
