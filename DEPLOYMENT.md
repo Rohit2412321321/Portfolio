@@ -1,5 +1,9 @@
 # Deployment Instructions
 
+## ✅ Fixed Vercel Configuration
+
+**ISSUE RESOLVED:** Updated Vercel configuration to use `rewrites` instead of `routes` for proper SPA routing.
+
 ## Deploy to Vercel
 
 Your portfolio is now configured for easy deployment to Vercel. Follow these steps:
