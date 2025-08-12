@@ -33,7 +33,11 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold">
+<<<<<<< HEAD
               <span className="text-primary"></span>Rohit
+=======
+              <span className="text-primary">Rohit</span>
+>>>>>>> 7676ee02d28a99b1786aa4511332298c6f9ef2d6
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <button
@@ -499,7 +503,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-4 lg:mb-0">
               <div className="text-2xl font-bold mb-2">
-                <span className="text-primary">L</span>ets Connect there
+                <span className="text-primary"></span>Lets Connect there
               </div>
               <div className="flex space-x-4">
                 <a
