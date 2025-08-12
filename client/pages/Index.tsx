@@ -5,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Link } from "react-router-dom";
 import {
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
   Download,
@@ -184,13 +183,9 @@ export default function Index() {
                     <Facebook className="w-5 h-5" />
                   </a>
                   <a
-                    href="#"
-                    className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-                  >
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="#"
+                    href="https://www.instagram.com/rohitk1o/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                   >
                     <Instagram className="w-5 h-5" />
@@ -516,13 +511,9 @@ export default function Index() {
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
-                  className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a
-                  href="#"
+                  href="https://www.instagram.com/rohitk1o/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-card rounded-full flex items-center justify-center hover:bg-primary transition-colors"
                 >
                   <Instagram className="w-4 h-4" />
