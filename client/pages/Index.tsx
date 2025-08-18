@@ -1118,7 +1118,7 @@ export default function Index() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-8 pt-8 border-t border-border text-center text-muted-foreground text-sm"
             >
-              <div>Copyright 2023 Rohit Khanal. All Rights Reserved.</div>
+              <div>Copyright 2025 Rohit Khanal. All Rights Reserved.</div>
               <div className="mt-2">
                 User Terms & Conditions | Privacy Policy
               </div>
