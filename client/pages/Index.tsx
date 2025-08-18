@@ -3,10 +3,10 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "react-router-dom";
-import { 
-  Facebook, 
-  Instagram, 
-  Linkedin, 
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
   Download,
   ArrowRight,
   Star,
@@ -16,10 +16,16 @@ import {
   Moon,
   ChevronUp,
   Send,
-  Filter
+  Filter,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, useScroll, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Index() {
@@ -33,10 +39,14 @@ export default function Index() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   const fullText = "UI & UX Designer";
-  
+
   // Typing animation effect
   useEffect(() => {
     if (isTyping) {
@@ -68,8 +78,8 @@ export default function Index() {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 500);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Custom cursor tracking
@@ -77,8 +87,8 @@ export default function Index() {
     const handleMouseMove = (e: MouseEvent) => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
@@ -90,7 +100,7 @@ export default function Index() {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const toggleTheme = () => {
@@ -102,63 +112,73 @@ export default function Index() {
     {
       name: "Sarah Johnson",
       role: "CEO at TechStart",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b4f8?w=60&h=60&fit=crop&crop=face",
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612b4f8?w=60&h=60&fit=crop&crop=face",
       text: "Working with Rohit was an absolutely fantastic experience. The design was different perfectly beyond expectations. The attention to detail was remarkable with a clean, modern layout.",
-      rating: 5
+      rating: 5,
     },
     {
       name: "Michael Chen",
       role: "Product Manager",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
       text: "Exceptional UI/UX design skills! Rohit delivered a user-friendly interface that significantly improved our user engagement and conversion rates.",
-      rating: 5
+      rating: 5,
     },
     {
       name: "Emily Davis",
       role: "Marketing Director",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face",
       text: "Professional, creative, and reliable. The project was delivered on time with stunning visuals that perfectly captured our brand essence.",
-      rating: 5
-    }
+      rating: 5,
+    },
   ];
 
   // Projects data with categories
   const projects = [
     {
       title: "Agency Landing Page Design",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2Fe37ea809934c440fba78590495f8ded3?format=webp&width=400",
-      category: "Web Design"
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2Fe37ea809934c440fba78590495f8ded3?format=webp&width=400",
+      category: "Web Design",
     },
     {
       title: "Cycling Landing Page Design",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F0002175364494ee7b63b80eeea878ffa?format=webp&width=400",
-      category: "App Design"
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F0002175364494ee7b63b80eeea878ffa?format=webp&width=400",
+      category: "App Design",
     },
     {
       title: "Ecom Web Page Design",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F59bf85bd6ded495a98485f165cf86535?format=webp&width=400",
-      category: "Web Design"
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F59bf85bd6ded495a98485f165cf86535?format=webp&width=400",
+      category: "Web Design",
     },
     {
       title: "Mobile App UI",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
-      category: "App Design"
+      image:
+        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop",
+      category: "App Design",
     },
     {
       title: "Brand Identity",
-      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=400&h=300&fit=crop",
-      category: "Graphic Design"
+      image:
+        "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=400&h=300&fit=crop",
+      category: "Graphic Design",
     },
     {
       title: "Portfolio Website",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-      category: "Web Design"
-    }
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      category: "Web Design",
+    },
   ];
 
-  const filteredProjects = activeFilter === "All" 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
   // Animation variants
   const containerVariants = {
@@ -167,25 +187,43 @@ export default function Index() {
       opacity: 1,
       transition: {
         delayChildren: 0.1,
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { y: 50, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.6 } }
+    visible: { y: 0, opacity: 1, transition: { duration: 0.6 } },
   };
 
-  const [heroRef, heroInView] = useInView({ threshold: 0.3, triggerOnce: true });
-  const [aboutRef, aboutInView] = useInView({ threshold: 0.3, triggerOnce: true });
-  const [servicesRef, servicesInView] = useInView({ threshold: 0.3, triggerOnce: true });
-  const [projectsRef, projectsInView] = useInView({ threshold: 0.3, triggerOnce: true });
-  const [testimonialsRef, testimonialsInView] = useInView({ threshold: 0.3, triggerOnce: true });
-  const [contactRef, contactInView] = useInView({ threshold: 0.3, triggerOnce: true });
+  const [heroRef, heroInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const [aboutRef, aboutInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const [servicesRef, servicesInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const [projectsRef, projectsInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const [testimonialsRef, testimonialsInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const [contactRef, contactInView] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
+    <div className={`min-h-screen ${darkMode ? "dark" : ""}`}>
       {/* Custom Cursor */}
       <motion.div
         className="fixed w-6 h-6 bg-primary/20 rounded-full pointer-events-none z-50 mix-blend-difference hidden lg:block"
@@ -207,8 +245,14 @@ export default function Index() {
             key={i}
             className="absolute w-1 h-1 bg-primary/10 rounded-full"
             animate={{
-              x: [Math.random() * window.innerWidth, Math.random() * window.innerWidth],
-              y: [Math.random() * window.innerHeight, Math.random() * window.innerHeight],
+              x: [
+                Math.random() * window.innerWidth,
+                Math.random() * window.innerWidth,
+              ],
+              y: [
+                Math.random() * window.innerHeight,
+                Math.random() * window.innerHeight,
+              ],
             }}
             transition={{
               duration: Math.random() * 10 + 10,
@@ -216,8 +260,8 @@ export default function Index() {
               repeatType: "reverse",
             }}
             style={{
-              left: Math.random() * 100 + '%',
-              top: Math.random() * 100 + '%',
+              left: Math.random() * 100 + "%",
+              top: Math.random() * 100 + "%",
             }}
           />
         ))}
@@ -246,7 +290,7 @@ export default function Index() {
 
       <div className="bg-background text-foreground">
         {/* Header */}
-        <motion.header 
+        <motion.header
           initial={{ y: -100 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.6 }}
@@ -254,7 +298,7 @@ export default function Index() {
         >
           <div className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
-              <motion.div 
+              <motion.div
                 className="text-2xl font-bold"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -360,7 +404,7 @@ export default function Index() {
                 </motion.a>
 
                 {/* Mobile menu button */}
-                <motion.button 
+                <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   className="md:hidden"
@@ -453,8 +497,8 @@ export default function Index() {
         </motion.header>
 
         {/* Hero Section */}
-        <motion.section 
-          id="home" 
+        <motion.section
+          id="home"
           ref={heroRef}
           variants={containerVariants}
           initial="hidden"
@@ -463,11 +507,11 @@ export default function Index() {
         >
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-between">
-              <motion.div 
+              <motion.div
                 variants={itemVariants}
                 className="lg:w-1/2 mb-8 lg:mb-0"
               >
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
@@ -475,7 +519,7 @@ export default function Index() {
                 >
                   Hi I am
                 </motion.p>
-                <motion.h1 
+                <motion.h1
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
@@ -487,27 +531,32 @@ export default function Index() {
                     {typedText}
                     <motion.span
                       animate={{ opacity: [1, 0] }}
-                      transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+                      transition={{
+                        duration: 0.5,
+                        repeat: Infinity,
+                        repeatType: "reverse",
+                      }}
                       className="inline-block w-1 h-12 bg-primary ml-1"
                     />
                   </span>
                 </motion.h1>
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                   className="text-muted-foreground mb-8 max-w-md"
                 >
-                  I'm a passionate UI/UX designer dedicated to creating intuitive,
-                  visually engaging, and user-focused digital experiences. With
-                  skills in wireframing, prototyping, and responsive design.
+                  I'm a passionate UI/UX designer dedicated to creating
+                  intuitive, visually engaging, and user-focused digital
+                  experiences. With skills in wireframing, prototyping, and
+                  responsive design.
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 }}
                 >
-                  <Button 
+                  <Button
                     className="bg-primary hover:bg-primary/90 text-white"
                     onClick={() => scrollToSection("contact")}
                   >
@@ -515,23 +564,23 @@ export default function Index() {
                   </Button>
                 </motion.div>
               </motion.div>
-              <motion.div 
+              <motion.div
                 variants={itemVariants}
                 className="lg:w-1/2 flex justify-center"
               >
                 <div className="relative">
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300 }}
                     className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-primary p-2"
                   >
-                    <img 
+                    <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F2309e3d1e7f74b258da02ab11183584a?format=webp&width=400"
                       alt="Rohit Khanal"
                       className="w-full h-full rounded-full object-cover"
                     />
                   </motion.div>
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
@@ -575,8 +624,8 @@ export default function Index() {
         </motion.section>
 
         {/* About Me Section */}
-        <motion.section 
-          id="about" 
+        <motion.section
+          id="about"
           ref={aboutRef}
           variants={containerVariants}
           initial="hidden"
@@ -585,27 +634,21 @@ export default function Index() {
         >
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-12">
-              <motion.div 
-                variants={itemVariants}
-                className="lg:w-1/2"
-              >
-                <motion.div 
+              <motion.div variants={itemVariants} className="lg:w-1/2">
+                <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border-4 border-primary p-2 mx-auto"
                 >
-                  <img 
+                  <img
                     src="https://cdn.builder.io/api/v1/image/assets%2F2ccf64b05f7a4d14ae119a8aeb87e8e5%2F2309e3d1e7f74b258da02ab11183584a?format=webp&width=400"
                     alt="Rohit Khanal"
                     className="w-full h-full rounded-full object-cover"
                   />
                 </motion.div>
               </motion.div>
-              <motion.div 
-                variants={itemVariants}
-                className="lg:w-1/2"
-              >
-                <motion.h2 
+              <motion.div variants={itemVariants} className="lg:w-1/2">
+                <motion.h2
                   initial={{ opacity: 0, x: -30 }}
                   animate={aboutInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.2, duration: 0.6 }}
@@ -613,23 +656,24 @@ export default function Index() {
                 >
                   About Me
                 </motion.h2>
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0, x: -30 }}
                   animate={aboutInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.4, duration: 0.6 }}
                   className="text-muted-foreground mb-8"
                 >
-                  I'm a passionate UI/UX designer dedicated to creating intuitive,
-                  visually engaging, and user-focused digital experiences. With
-                  skills in wireframing, prototyping, and responsive design.
+                  I'm a passionate UI/UX designer dedicated to creating
+                  intuitive, visually engaging, and user-focused digital
+                  experiences. With skills in wireframing, prototyping, and
+                  responsive design.
                 </motion.p>
-                
+
                 <div className="space-y-6">
                   {[
                     { skill: "UX", percentage: 92 },
                     { skill: "Website Design", percentage: 88 },
                     { skill: "App Design", percentage: 85 },
-                    { skill: "Graphic Design", percentage: 90 }
+                    { skill: "Graphic Design", percentage: 90 },
                   ].map((item, index) => (
                     <motion.div
                       key={item.skill}
@@ -639,13 +683,21 @@ export default function Index() {
                     >
                       <div className="flex justify-between mb-2">
                         <span className="font-medium">{item.skill}</span>
-                        <span className="text-muted-foreground">{item.percentage}%</span>
+                        <span className="text-muted-foreground">
+                          {item.percentage}%
+                        </span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2">
                         <motion.div
                           initial={{ width: 0 }}
-                          animate={aboutInView ? { width: `${item.percentage}%` } : {}}
-                          transition={{ delay: 0.8 + index * 0.1, duration: 1, ease: "easeOut" }}
+                          animate={
+                            aboutInView ? { width: `${item.percentage}%` } : {}
+                          }
+                          transition={{
+                            delay: 0.8 + index * 0.1,
+                            duration: 1,
+                            ease: "easeOut",
+                          }}
                           className="bg-primary h-2 rounded-full"
                         />
                       </div>
@@ -658,8 +710,8 @@ export default function Index() {
         </motion.section>
 
         {/* Services Section */}
-        <motion.section 
-          id="services" 
+        <motion.section
+          id="services"
           ref={servicesRef}
           variants={containerVariants}
           initial="hidden"
@@ -667,10 +719,7 @@ export default function Index() {
           className="py-16 px-6"
         >
           <div className="container mx-auto">
-            <motion.div 
-              variants={itemVariants}
-              className="text-center mb-12"
-            >
+            <motion.div variants={itemVariants} className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Services</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 We create mouth-watering conversion-focused food and beverage
@@ -679,16 +728,32 @@ export default function Index() {
                 back.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               variants={containerVariants}
               className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
               {[
-                { icon: "UI/UX", title: "UI/UX", desc: "Creating user-friendly UI/UX web designs and layouts." },
-                { icon: "WD", title: "Web Design", desc: "Designing custom websites with optimal usability, beauty, and responsiveness." },
-                { icon: "AD", title: "App Design", desc: "Building beautiful and functional mobile app design interfaces." },
-                { icon: "GD", title: "Graphic Design", desc: "Crafting engaging visual designs that captivate and communicate." }
+                {
+                  icon: "UI/UX",
+                  title: "UI/UX",
+                  desc: "Creating user-friendly UI/UX web designs and layouts.",
+                },
+                {
+                  icon: "WD",
+                  title: "Web Design",
+                  desc: "Designing custom websites with optimal usability, beauty, and responsiveness.",
+                },
+                {
+                  icon: "AD",
+                  title: "App Design",
+                  desc: "Building beautiful and functional mobile app design interfaces.",
+                },
+                {
+                  icon: "GD",
+                  title: "Graphic Design",
+                  desc: "Crafting engaging visual designs that captivate and communicate.",
+                },
               ].map((service, index) => (
                 <motion.div
                   key={service.title}
@@ -696,15 +761,21 @@ export default function Index() {
                   whileHover={{ y: -10, scale: 1.05 }}
                   className="p-6 border border-border bg-card hover:bg-card/80 transition-all duration-300 rounded-lg cursor-pointer group"
                 >
-                  <motion.div 
+                  <motion.div
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
                     className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors"
                   >
-                    <div className="text-primary text-xl font-bold">{service.icon}</div>
+                    <div className="text-primary text-xl font-bold">
+                      {service.icon}
+                    </div>
                   </motion.div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm">{service.desc}</p>
+                  <h3 className="text-xl font-semibold mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    {service.desc}
+                  </p>
                 </motion.div>
               ))}
             </motion.div>
@@ -712,8 +783,8 @@ export default function Index() {
         </motion.section>
 
         {/* Projects Section */}
-        <motion.section 
-          id="projects" 
+        <motion.section
+          id="projects"
           ref={projectsRef}
           variants={containerVariants}
           initial="hidden"
@@ -721,10 +792,7 @@ export default function Index() {
           className="py-16 px-6 bg-card/30"
         >
           <div className="container mx-auto">
-            <motion.div 
-              variants={itemVariants}
-              className="text-center mb-12"
-            >
+            <motion.div variants={itemVariants} className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">My Projects</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 We create mouth-watering conversion-focused food and beverage
@@ -733,21 +801,27 @@ export default function Index() {
                 back.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               variants={itemVariants}
               className="flex justify-center mb-8"
             >
               <div className="flex bg-muted rounded-full p-1">
-                {["All", "UI/UX", "Web Design", "App Design", "Graphic Design"].map((filter) => (
+                {[
+                  "All",
+                  "UI/UX",
+                  "Web Design",
+                  "App Design",
+                  "Graphic Design",
+                ].map((filter) => (
                   <motion.button
                     key={filter}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setActiveFilter(filter)}
                     className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
-                      activeFilter === filter 
-                        ? "bg-primary text-white" 
+                      activeFilter === filter
+                        ? "bg-primary text-white"
                         : "hover:bg-muted-foreground/10"
                     }`}
                   >
@@ -756,9 +830,9 @@ export default function Index() {
                 ))}
               </div>
             </motion.div>
-            
+
             <AnimatePresence mode="wait">
-              <motion.div 
+              <motion.div
                 key={activeFilter}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -777,7 +851,7 @@ export default function Index() {
                   >
                     <div className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                       <div className="overflow-hidden">
-                        <motion.img 
+                        <motion.img
                           whileHover={{ scale: 1.1 }}
                           transition={{ duration: 0.3 }}
                           src={project.image}
@@ -789,7 +863,9 @@ export default function Index() {
                         <h3 className="font-semibold group-hover:text-primary transition-colors">
                           {project.title}
                         </h3>
-                        <p className="text-sm text-primary/70 mt-1">{project.category}</p>
+                        <p className="text-sm text-primary/70 mt-1">
+                          {project.category}
+                        </p>
                       </div>
                     </div>
                   </motion.div>
@@ -800,8 +876,8 @@ export default function Index() {
         </motion.section>
 
         {/* Testimonials Section */}
-        <motion.section 
-          id="testimonials" 
+        <motion.section
+          id="testimonials"
           ref={testimonialsRef}
           variants={containerVariants}
           initial="hidden"
@@ -809,10 +885,7 @@ export default function Index() {
           className="py-16 px-6"
         >
           <div className="container mx-auto">
-            <motion.div 
-              variants={itemVariants}
-              className="text-center mb-12"
-            >
+            <motion.div variants={itemVariants} className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Testimonials</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 We create mouth-watering conversion-focused food and beverage
@@ -821,11 +894,8 @@ export default function Index() {
                 back.
               </p>
             </motion.div>
-            
-            <motion.div 
-              variants={itemVariants}
-              className="max-w-3xl mx-auto"
-            >
+
+            <motion.div variants={itemVariants} className="max-w-3xl mx-auto">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentTestimonial}
@@ -836,20 +906,22 @@ export default function Index() {
                   className="p-8 border border-border bg-card rounded-lg"
                 >
                   <div className="flex items-start space-x-4">
-                    <motion.img 
+                    <motion.img
                       whileHover={{ scale: 1.1 }}
                       src={testimonials[currentTestimonial].image}
                       alt={testimonials[currentTestimonial].name}
                       className="w-16 h-16 rounded-full object-cover flex-shrink-0"
                     />
                     <div className="flex-1">
-                      <motion.div 
+                      <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
                         className="flex mb-3"
                       >
-                        {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                        {[
+                          ...Array(testimonials[currentTestimonial].rating),
+                        ].map((_, i) => (
                           <motion.div
                             key={i}
                             initial={{ opacity: 0, scale: 0 }}
@@ -860,7 +932,7 @@ export default function Index() {
                           </motion.div>
                         ))}
                       </motion.div>
-                      <motion.p 
+                      <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
@@ -873,14 +945,18 @@ export default function Index() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
                       >
-                        <h4 className="font-semibold">{testimonials[currentTestimonial].name}</h4>
-                        <p className="text-muted-foreground text-sm">{testimonials[currentTestimonial].role}</p>
+                        <h4 className="font-semibold">
+                          {testimonials[currentTestimonial].name}
+                        </h4>
+                        <p className="text-muted-foreground text-sm">
+                          {testimonials[currentTestimonial].role}
+                        </p>
                       </motion.div>
                     </div>
                   </div>
                 </motion.div>
               </AnimatePresence>
-              
+
               <div className="flex justify-center mt-6 space-x-2">
                 {testimonials.map((_, index) => (
                   <motion.button
@@ -899,8 +975,8 @@ export default function Index() {
         </motion.section>
 
         {/* Contact Section */}
-        <motion.section 
-          id="contact" 
+        <motion.section
+          id="contact"
           ref={contactRef}
           variants={containerVariants}
           initial="hidden"
@@ -908,23 +984,17 @@ export default function Index() {
           className="py-16 px-6 bg-card/30"
         >
           <div className="container mx-auto">
-            <motion.div 
-              variants={itemVariants}
-              className="text-center mb-12"
-            >
+            <motion.div variants={itemVariants} className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Let's Design Together</h2>
               <p className="text-muted-foreground max-w-md mx-auto">
                 Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
                 mauris est risus lectus. Phasellus consequat urna tellus
               </p>
             </motion.div>
-            
-            <motion.div 
-              variants={itemVariants}
-              className="max-w-md mx-auto"
-            >
+
+            <motion.div variants={itemVariants} className="max-w-md mx-auto">
               <div className="flex">
-                <Input 
+                <Input
                   placeholder="Enter Your Email"
                   className="flex-1 bg-background border-border"
                 />
@@ -942,7 +1012,7 @@ export default function Index() {
         </motion.section>
 
         {/* Footer */}
-        <motion.footer 
+        <motion.footer
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -950,10 +1020,7 @@ export default function Index() {
         >
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row justify-between items-center">
-              <motion.div 
-                whileHover={{ scale: 1.05 }}
-                className="mb-4 lg:mb-0"
-              >
+              <motion.div whileHover={{ scale: 1.05 }} className="mb-4 lg:mb-0">
                 <div className="text-2xl font-bold mb-2">
                   <span className="text-primary">L</span>ets Connect there
                 </div>
@@ -987,23 +1054,45 @@ export default function Index() {
                   </motion.a>
                 </div>
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="grid grid-cols-2 lg:grid-cols-3 gap-8 text-sm"
               >
                 <div>
-                  <h3 className="font-semibold mb-3 text-primary">Navigation</h3>
+                  <h3 className="font-semibold mb-3 text-primary">
+                    Navigation
+                  </h3>
                   <div className="space-y-2 text-muted-foreground">
-                    <motion.div whileHover={{ x: 5 }} className="cursor-pointer">About Us</motion.div>
-                    <motion.div whileHover={{ x: 5 }} className="cursor-pointer">Service</motion.div>
-                    <motion.div whileHover={{ x: 5 }} className="cursor-pointer">Resume</motion.div>
-                    <motion.div whileHover={{ x: 5 }} className="cursor-pointer">Project</motion.div>
+                    <motion.div
+                      whileHover={{ x: 5 }}
+                      className="cursor-pointer"
+                    >
+                      About Us
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ x: 5 }}
+                      className="cursor-pointer"
+                    >
+                      Service
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ x: 5 }}
+                      className="cursor-pointer"
+                    >
+                      Resume
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ x: 5 }}
+                      className="cursor-pointer"
+                    >
+                      Project
+                    </motion.div>
                   </div>
                 </div>
-                
+
                 <div>
                   <h3 className="font-semibold mb-3 text-primary">Contact</h3>
                   <div className="space-y-2 text-muted-foreground">
@@ -1011,7 +1100,7 @@ export default function Index() {
                     <div>Khanalrohit67@gmail.com</div>
                   </div>
                 </div>
-                
+
                 <div>
                   <h3 className="font-semibold mb-3 text-primary">
                     Get the latest information
@@ -1032,15 +1121,17 @@ export default function Index() {
                 </div>
               </motion.div>
             </div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-8 pt-8 border-t border-border text-center text-muted-foreground text-sm"
             >
               <div>Copyright 2023 Rohit Khanal. All Rights Reserved.</div>
-              <div className="mt-2">User Terms & Conditions | Privacy Policy</div>
+              <div className="mt-2">
+                User Terms & Conditions | Privacy Policy
+              </div>
             </motion.div>
           </div>
         </motion.footer>
