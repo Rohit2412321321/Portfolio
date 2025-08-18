@@ -120,8 +120,6 @@ export default function Index() {
     {
       name: "Sushila Kafle",
       role: "Frontend Engineer/QA Engineer",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
       text: "Exceptional UI/UX design skills! Rohit delivered a user-friendly interface that significantly improved our user engagement and conversion rates.",
       rating: 5,
     },
