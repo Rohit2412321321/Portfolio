@@ -110,8 +110,8 @@ export default function Index() {
   // Testimonials data
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO at TechStart",
+      name: "Dipson Pokharel",
+      role: "Backend Engineer",
       image:
         "https://images.unsplash.com/photo-1494790108755-2616b612b4f8?w=60&h=60&fit=crop&crop=face",
       text: "Working with Rohit was an absolutely fantastic experience. The design was different perfectly beyond expectations. The attention to detail was remarkable with a clean, modern layout.",
