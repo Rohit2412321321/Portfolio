@@ -123,14 +123,6 @@ export default function Index() {
       text: "Exceptional UI/UX design skills! Rohit delivered a user-friendly interface that significantly improved our user engagement and conversion rates.",
       rating: 5,
     },
-    {
-      name: "Emily Davis",
-      role: "Marketing Director",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face",
-      text: "Professional, creative, and reliable. The project was delivered on time with stunning visuals that perfectly captured our brand essence.",
-      rating: 5,
-    },
   ];
 
   // Projects data with categories
